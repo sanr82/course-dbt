@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: stg_postgres__promos
+    description: base table for postgres sources
+    columns:
+    - name: promo_id

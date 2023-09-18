@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_postgres__products
+    description: base table from postgres sources
+    columns: 
+    - name: product_id
+      tests:
+        - unique
+        - not_null
