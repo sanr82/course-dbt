@@ -1,10 +1,10 @@
 {{ config(materialized='table') }}
 
 select
-      order_id,
-      user_id,
+      order_id as order_guid,
+      user_id as user_guid,
       promo_id,
-      address_id,
+      address_id as address_guid,
       created_at as created_at_utc,
       order_cost,
       shipping_cost,

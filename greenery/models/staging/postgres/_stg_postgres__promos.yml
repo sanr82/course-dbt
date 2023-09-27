@@ -5,3 +5,8 @@ models:
     description: base table for postgres sources
     columns:
     - name: promo_id
+      description: primary key of the table
+    - name: Discount
+      description: discount available for the promotion.
+    - name: promo_status
+      description: status of the promotion.

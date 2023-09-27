@@ -8,3 +8,22 @@ models:
       tests:
         - unique
         - not_null
+    - name: session_id
+    - name: user_guid
+      tests:
+        - relationships:
+            to: ref('stg_postgres__users')
+            field: user_guid
+    - name: page_url
+    - name: created_at_utc
+      description: created in utc timezone
+    - name: event_type
+      tests:
+        - accepted_values:
+            values:
+              - checkout
+              - package_shipped
+              - add_to_cart
+              - page_view
+    - name: order_id
+    - name: product_id

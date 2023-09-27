@@ -4,7 +4,22 @@ models:
   - name: stg_postgres__users
     description: base table from postgres sources
     columns: 
-    - name: user_id
+    - name: user_guid
+      description: globally unique identifier of the user
       tests:
         - unique
         - not_null
+    - name: first_name
+      description: first name of the user
+    - name: last_name
+      description: Last name of the user
+    - name: email
+      description: email address
+    - name: phone_number
+      description: phone number of the user
+    - name: created_at_utc
+      description: user created at utc timezone
+    - name: updated_at_utc
+      description: user updated at utc timezone
+    - name: address_guid
+      description: globally inique address

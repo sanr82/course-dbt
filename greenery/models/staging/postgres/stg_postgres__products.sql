@@ -1,7 +1,7 @@
 {{ config(materialized='table') }}
 
 select
-    product_id,
+    product_id as product_guid,
     name as product_name,
     price,
     inventory

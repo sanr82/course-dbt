@@ -4,7 +4,14 @@ models:
   - name: stg_postgres__addresses
     description: base table from postgres sources
     columns: 
-    - name: address_id
+    - name: address_guid
       tests:
         - unique
         - not_null
+    - name: address
+      description: actual address
+    - name: zipcode
+      tests:
+        - not_null
+    - name: states
+    - name: country
