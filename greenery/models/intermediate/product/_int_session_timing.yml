@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: int_session_timing
+    description: intermediate table to build fact_page_views
+    columns: 
+    - name: session_id
+      tests:
+        - unique
+        - not_null
+    - name: session_started_at
+    - name: session_ended_at

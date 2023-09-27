@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: int_user_orders
+    description: intermediate table to build fact_user_orders
+    columns: 
+    - name: first_order_created_at
+    - name: last_order_created_at
+    - name: total_spend
+    - name: orders

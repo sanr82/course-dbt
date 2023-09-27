@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fact_user_orders
+    description: fact table for marketing model
+    columns: 
+    - name: user_guid
+    - name: is_buyer
+    - name: is_frequent_buyer
+    - name: first_order_created_at
+    - name: last_order_created_at
+    - name: orders
+    - name: total_spend
+    - name:  products_purchased

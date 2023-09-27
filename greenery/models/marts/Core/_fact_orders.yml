@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fact_orders
+    description: fact table for core model
+    columns: 
+    - name: order_guid
+    - name: user_guid
+    - name: promo_id
+    - name: created_at_utc
+    - name: unique_items
+    - name: total_items
+    - name: order_cost
+    - name: shipping_cost
+    - name: order_total
+    - name: shipping_service
+    - name: estimated_delivery_at_utc
+    - name: delivered_at_utc
+    - name: status

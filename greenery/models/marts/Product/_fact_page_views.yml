@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: fact_page_views
+    description: fact table for product model
+    columns: 
+    - name: user_guid
+    - name: product_id
+    - name: order_id
+    - name: session_id
+    - name: session_started_at
+    - name: session_ended_at
+    - name: page_views
+    - name: add_to_carts
+    - name: checkouts
+    - name: packages_shipped
+    - name: session_length_minutes
