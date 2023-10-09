@@ -1,0 +1,18 @@
+version: 2
+
+
+exposures:
+  - name: product_funnel
+    label: product funnel for the greenery data
+    type: dashboard
+    maturity: high
+    url: https://bi.tool/dashboards/1
+    description: This dashboard shows product funnel for greenery data
+    
+    depends_on: 
+      - ref('fact_page_views')
+      - ref('dim_users')
+    
+    owner:
+      name: Santhosh Ramalingam
+      email: santhosh@sigmacomputing.com

@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_user
+    description: dim table for users
+    columns: 
+    - name: first_name
+      description: first name of the user
+    - name: last_name
+      description: Last name of the user
+    - name: email
+      description: email address
+    - name: phone_number
+      description: phone number of the user
+    - name: address_guid
+      description: globally inique address
