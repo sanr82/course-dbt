@@ -25,7 +25,6 @@ select * from (
 select dense_rank() over (order by dbt_updated_at desc) as rank, product_id, name, inventory as week4_inventory, dbt_updated_at from product_snapshot)
 where rank = 1
 )
-
 select name from week3 inner join week4 using (product_id)
 where week3_inventory <> week4_inventory
 --------------------------------------------------------
@@ -53,7 +52,7 @@ from product_snapshot
 
 OUT_OF_STOCK_PRODUCTS	                        OUT_OF_STOCK_WEEK
 Pothos	                                         2
-String of pearls	                             2
+String of pearls	                               2
 
 SQL:
 
@@ -68,11 +67,11 @@ order by  inventory_change desc;
 Answers:
 
 PRODUCT_ID	                            NAME	            HIGHEST_INVENTORY	LOWEST_INVENTORY	INVENTORY_CHANGE
-fb0e8be7-5ac4-4a76-a1fa-2cc4bf0b2d80	String of pearls	58	                0	                58
-b66a7143-c18a-43bb-b5dc-06bb5d1d3160	ZZ Plant	        89	                41	                48
-be49171b-9f72-4fc9-bf7a-9a52e259836b	Monstera	        77	                31	                46
-4cda01b9-62e2-46c5-830f-b7f262a58fb1	Pothos	            40	                0	                40
-55c6a062-5f4a-4a8b-a8e5-05ea5e6715a3	Philodendron	    51	                15	                36
+fb0e8be7-5ac4-4a76-a1fa-2cc4bf0b2d80	String of pearls	  58	                0	                 58
+b66a7143-c18a-43bb-b5dc-06bb5d1d3160	ZZ Plant	          89	                41	                48
+be49171b-9f72-4fc9-bf7a-9a52e259836b	Monstera	          77	                31	                46
+4cda01b9-62e2-46c5-830f-b7f262a58fb1	Pothos	            40	                0	                 40
+55c6a062-5f4a-4a8b-a8e5-05ea5e6715a3	Philodendron	      51	                15	                36
 689fb64e-a4a2-45c5-b9f2-480c2155624d	Bamboo	            56	                23	                33
 
 Part-2
